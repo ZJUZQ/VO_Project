@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vortex/zhou_temp_test/VO_project_v3
+CMAKE_SOURCE_DIR = /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vortex/zhou_temp_test/VO_project_v3/build
+CMAKE_BINARY_DIR = /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles /home/vortex/zhou_temp_test/VO_project_v3/build/src/CMakeFiles/progress.marks
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles 0
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src/CMakeFiles/progress.marks
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/zhouslam.dir/rule:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/zhouslam.dir/rule
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/zhouslam.dir/rule
 .PHONY : src/CMakeFiles/zhouslam.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ zhouslam: src/CMakeFiles/zhouslam.dir/rule
 
 # fast build rule for target.
 zhouslam/fast:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/build
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/build
 .PHONY : zhouslam/fast
 
 Ceres_BA_PnP.o: Ceres_BA_PnP.cpp.o
@@ -131,7 +131,7 @@ Ceres_BA_PnP.o: Ceres_BA_PnP.cpp.o
 
 # target to build an object file
 Ceres_BA_PnP.cpp.o:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o
 .PHONY : Ceres_BA_PnP.cpp.o
 
 Ceres_BA_PnP.i: Ceres_BA_PnP.cpp.i
@@ -140,7 +140,7 @@ Ceres_BA_PnP.i: Ceres_BA_PnP.cpp.i
 
 # target to preprocess a source file
 Ceres_BA_PnP.cpp.i:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.i
 .PHONY : Ceres_BA_PnP.cpp.i
 
 Ceres_BA_PnP.s: Ceres_BA_PnP.cpp.s
@@ -149,7 +149,7 @@ Ceres_BA_PnP.s: Ceres_BA_PnP.cpp.s
 
 # target to generate assembly for a file
 Ceres_BA_PnP.cpp.s:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.s
 .PHONY : Ceres_BA_PnP.cpp.s
 
 camera.o: camera.cpp.o
@@ -158,7 +158,7 @@ camera.o: camera.cpp.o
 
 # target to build an object file
 camera.cpp.o:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/camera.cpp.o
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/camera.cpp.o
 .PHONY : camera.cpp.o
 
 camera.i: camera.cpp.i
@@ -167,7 +167,7 @@ camera.i: camera.cpp.i
 
 # target to preprocess a source file
 camera.cpp.i:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/camera.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/camera.cpp.i
 .PHONY : camera.cpp.i
 
 camera.s: camera.cpp.s
@@ -176,7 +176,7 @@ camera.s: camera.cpp.s
 
 # target to generate assembly for a file
 camera.cpp.s:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/camera.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/camera.cpp.s
 .PHONY : camera.cpp.s
 
 config.o: config.cpp.o
@@ -185,7 +185,7 @@ config.o: config.cpp.o
 
 # target to build an object file
 config.cpp.o:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/config.cpp.o
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/config.cpp.o
 .PHONY : config.cpp.o
 
 config.i: config.cpp.i
@@ -194,7 +194,7 @@ config.i: config.cpp.i
 
 # target to preprocess a source file
 config.cpp.i:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/config.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/config.cpp.i
 .PHONY : config.cpp.i
 
 config.s: config.cpp.s
@@ -203,7 +203,7 @@ config.s: config.cpp.s
 
 # target to generate assembly for a file
 config.cpp.s:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/config.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/config.cpp.s
 .PHONY : config.cpp.s
 
 frame.o: frame.cpp.o
@@ -212,7 +212,7 @@ frame.o: frame.cpp.o
 
 # target to build an object file
 frame.cpp.o:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/frame.cpp.o
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/frame.cpp.o
 .PHONY : frame.cpp.o
 
 frame.i: frame.cpp.i
@@ -221,7 +221,7 @@ frame.i: frame.cpp.i
 
 # target to preprocess a source file
 frame.cpp.i:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/frame.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/frame.cpp.i
 .PHONY : frame.cpp.i
 
 frame.s: frame.cpp.s
@@ -230,8 +230,62 @@ frame.s: frame.cpp.s
 
 # target to generate assembly for a file
 frame.cpp.s:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/frame.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/frame.cpp.s
 .PHONY : frame.cpp.s
+
+g2o_BA_PnP.o: g2o_BA_PnP.cpp.o
+
+.PHONY : g2o_BA_PnP.o
+
+# target to build an object file
+g2o_BA_PnP.cpp.o:
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o
+.PHONY : g2o_BA_PnP.cpp.o
+
+g2o_BA_PnP.i: g2o_BA_PnP.cpp.i
+
+.PHONY : g2o_BA_PnP.i
+
+# target to preprocess a source file
+g2o_BA_PnP.cpp.i:
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.i
+.PHONY : g2o_BA_PnP.cpp.i
+
+g2o_BA_PnP.s: g2o_BA_PnP.cpp.s
+
+.PHONY : g2o_BA_PnP.s
+
+# target to generate assembly for a file
+g2o_BA_PnP.cpp.s:
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.s
+.PHONY : g2o_BA_PnP.cpp.s
+
+g2o_types.o: g2o_types.cpp.o
+
+.PHONY : g2o_types.o
+
+# target to build an object file
+g2o_types.cpp.o:
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/g2o_types.cpp.o
+.PHONY : g2o_types.cpp.o
+
+g2o_types.i: g2o_types.cpp.i
+
+.PHONY : g2o_types.i
+
+# target to preprocess a source file
+g2o_types.cpp.i:
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/g2o_types.cpp.i
+.PHONY : g2o_types.cpp.i
+
+g2o_types.s: g2o_types.cpp.s
+
+.PHONY : g2o_types.s
+
+# target to generate assembly for a file
+g2o_types.cpp.s:
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/g2o_types.cpp.s
+.PHONY : g2o_types.cpp.s
 
 map.o: map.cpp.o
 
@@ -239,7 +293,7 @@ map.o: map.cpp.o
 
 # target to build an object file
 map.cpp.o:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/map.cpp.o
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/map.cpp.o
 .PHONY : map.cpp.o
 
 map.i: map.cpp.i
@@ -248,7 +302,7 @@ map.i: map.cpp.i
 
 # target to preprocess a source file
 map.cpp.i:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/map.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/map.cpp.i
 .PHONY : map.cpp.i
 
 map.s: map.cpp.s
@@ -257,7 +311,7 @@ map.s: map.cpp.s
 
 # target to generate assembly for a file
 map.cpp.s:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/map.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/map.cpp.s
 .PHONY : map.cpp.s
 
 mappoint.o: mappoint.cpp.o
@@ -266,7 +320,7 @@ mappoint.o: mappoint.cpp.o
 
 # target to build an object file
 mappoint.cpp.o:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/mappoint.cpp.o
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/mappoint.cpp.o
 .PHONY : mappoint.cpp.o
 
 mappoint.i: mappoint.cpp.i
@@ -275,7 +329,7 @@ mappoint.i: mappoint.cpp.i
 
 # target to preprocess a source file
 mappoint.cpp.i:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/mappoint.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/mappoint.cpp.i
 .PHONY : mappoint.cpp.i
 
 mappoint.s: mappoint.cpp.s
@@ -284,7 +338,7 @@ mappoint.s: mappoint.cpp.s
 
 # target to generate assembly for a file
 mappoint.cpp.s:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/mappoint.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/mappoint.cpp.s
 .PHONY : mappoint.cpp.s
 
 visual_odometry.o: visual_odometry.cpp.o
@@ -293,7 +347,7 @@ visual_odometry.o: visual_odometry.cpp.o
 
 # target to build an object file
 visual_odometry.cpp.o:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.o
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.o
 .PHONY : visual_odometry.cpp.o
 
 visual_odometry.i: visual_odometry.cpp.i
@@ -302,7 +356,7 @@ visual_odometry.i: visual_odometry.cpp.i
 
 # target to preprocess a source file
 visual_odometry.cpp.i:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.i
 .PHONY : visual_odometry.cpp.i
 
 visual_odometry.s: visual_odometry.cpp.s
@@ -311,7 +365,7 @@ visual_odometry.s: visual_odometry.cpp.s
 
 # target to generate assembly for a file
 visual_odometry.cpp.s:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.s
 .PHONY : visual_odometry.cpp.s
 
 # Help Target
@@ -335,6 +389,12 @@ help:
 	@echo "... frame.o"
 	@echo "... frame.i"
 	@echo "... frame.s"
+	@echo "... g2o_BA_PnP.o"
+	@echo "... g2o_BA_PnP.i"
+	@echo "... g2o_BA_PnP.s"
+	@echo "... g2o_types.o"
+	@echo "... g2o_types.i"
+	@echo "... g2o_types.s"
 	@echo "... map.o"
 	@echo "... map.i"
 	@echo "... map.s"
@@ -355,6 +415,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

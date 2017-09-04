@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vortex/zhou_temp_test/VO_project_v3
+CMAKE_SOURCE_DIR = /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vortex/zhou_temp_test/VO_project_v3/build
+CMAKE_BINARY_DIR = /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build
 
 #=============================================================================
 # Directory level rules for directory src
@@ -84,7 +84,7 @@ src/preinstall:
 src/CMakeFiles/zhouslam.dir/all:
 	$(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/depend
 	$(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10 "Built target zhouslam"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12 "Built target zhouslam"
 .PHONY : src/CMakeFiles/zhouslam.dir/all
 
 # Include target in all.
@@ -94,9 +94,9 @@ all: src/CMakeFiles/zhouslam.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/zhouslam.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/zhouslam.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/zhouslam.dir/rule
 
 # Convenience name for target.
@@ -118,12 +118,12 @@ clean: src/CMakeFiles/zhouslam.dir/clean
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/run_vo.dir/all
+test/all: test/CMakeFiles/run_vo_ceres.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/run_vo.dir/clean
+test/clean: test/CMakeFiles/run_vo_ceres.dir/clean
 
 .PHONY : test/clean
 
@@ -133,39 +133,39 @@ test/preinstall:
 .PHONY : test/preinstall
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/run_vo.dir
+# Target rules for target test/CMakeFiles/run_vo_ceres.dir
 
 # All Build rule for target.
-test/CMakeFiles/run_vo.dir/all: src/CMakeFiles/zhouslam.dir/all
-	$(MAKE) -f test/CMakeFiles/run_vo.dir/build.make test/CMakeFiles/run_vo.dir/depend
-	$(MAKE) -f test/CMakeFiles/run_vo.dir/build.make test/CMakeFiles/run_vo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles --progress-num=1,2 "Built target run_vo"
-.PHONY : test/CMakeFiles/run_vo.dir/all
+test/CMakeFiles/run_vo_ceres.dir/all: src/CMakeFiles/zhouslam.dir/all
+	$(MAKE) -f test/CMakeFiles/run_vo_ceres.dir/build.make test/CMakeFiles/run_vo_ceres.dir/depend
+	$(MAKE) -f test/CMakeFiles/run_vo_ceres.dir/build.make test/CMakeFiles/run_vo_ceres.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles --progress-num=1,2 "Built target run_vo_ceres"
+.PHONY : test/CMakeFiles/run_vo_ceres.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/run_vo.dir/all
+all: test/CMakeFiles/run_vo_ceres.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/run_vo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/run_vo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/run_vo.dir/rule
+test/CMakeFiles/run_vo_ceres.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles 12
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/run_vo_ceres.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/run_vo_ceres.dir/rule
 
 # Convenience name for target.
-run_vo: test/CMakeFiles/run_vo.dir/rule
+run_vo_ceres: test/CMakeFiles/run_vo_ceres.dir/rule
 
-.PHONY : run_vo
-
-# clean rule for target.
-test/CMakeFiles/run_vo.dir/clean:
-	$(MAKE) -f test/CMakeFiles/run_vo.dir/build.make test/CMakeFiles/run_vo.dir/clean
-.PHONY : test/CMakeFiles/run_vo.dir/clean
+.PHONY : run_vo_ceres
 
 # clean rule for target.
-clean: test/CMakeFiles/run_vo.dir/clean
+test/CMakeFiles/run_vo_ceres.dir/clean:
+	$(MAKE) -f test/CMakeFiles/run_vo_ceres.dir/build.make test/CMakeFiles/run_vo_ceres.dir/clean
+.PHONY : test/CMakeFiles/run_vo_ceres.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/run_vo_ceres.dir/clean
 
 .PHONY : clean
 

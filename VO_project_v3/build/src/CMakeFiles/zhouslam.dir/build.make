@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vortex/zhou_temp_test/VO_project_v3
+CMAKE_SOURCE_DIR = /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vortex/zhou_temp_test/VO_project_v3/build
+CMAKE_BINARY_DIR = /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/zhouslam.dir/depend.make
@@ -59,16 +59,16 @@ include src/CMakeFiles/zhouslam.dir/flags.make
 
 src/CMakeFiles/zhouslam.dir/camera.cpp.o: src/CMakeFiles/zhouslam.dir/flags.make
 src/CMakeFiles/zhouslam.dir/camera.cpp.o: ../src/camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/zhouslam.dir/camera.cpp.o"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/camera.cpp.o -c /home/vortex/zhou_temp_test/VO_project_v3/src/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/zhouslam.dir/camera.cpp.o"
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/camera.cpp.o -c /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/camera.cpp
 
 src/CMakeFiles/zhouslam.dir/camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zhouslam.dir/camera.cpp.i"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_project_v3/src/camera.cpp > CMakeFiles/zhouslam.dir/camera.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/camera.cpp > CMakeFiles/zhouslam.dir/camera.cpp.i
 
 src/CMakeFiles/zhouslam.dir/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zhouslam.dir/camera.cpp.s"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_project_v3/src/camera.cpp -o CMakeFiles/zhouslam.dir/camera.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/camera.cpp -o CMakeFiles/zhouslam.dir/camera.cpp.s
 
 src/CMakeFiles/zhouslam.dir/camera.cpp.o.requires:
 
@@ -83,16 +83,16 @@ src/CMakeFiles/zhouslam.dir/camera.cpp.o.provides.build: src/CMakeFiles/zhouslam
 
 src/CMakeFiles/zhouslam.dir/config.cpp.o: src/CMakeFiles/zhouslam.dir/flags.make
 src/CMakeFiles/zhouslam.dir/config.cpp.o: ../src/config.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/zhouslam.dir/config.cpp.o"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/config.cpp.o -c /home/vortex/zhou_temp_test/VO_project_v3/src/config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/zhouslam.dir/config.cpp.o"
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/config.cpp.o -c /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/config.cpp
 
 src/CMakeFiles/zhouslam.dir/config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zhouslam.dir/config.cpp.i"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_project_v3/src/config.cpp > CMakeFiles/zhouslam.dir/config.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/config.cpp > CMakeFiles/zhouslam.dir/config.cpp.i
 
 src/CMakeFiles/zhouslam.dir/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zhouslam.dir/config.cpp.s"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_project_v3/src/config.cpp -o CMakeFiles/zhouslam.dir/config.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/config.cpp -o CMakeFiles/zhouslam.dir/config.cpp.s
 
 src/CMakeFiles/zhouslam.dir/config.cpp.o.requires:
 
@@ -107,16 +107,16 @@ src/CMakeFiles/zhouslam.dir/config.cpp.o.provides.build: src/CMakeFiles/zhouslam
 
 src/CMakeFiles/zhouslam.dir/frame.cpp.o: src/CMakeFiles/zhouslam.dir/flags.make
 src/CMakeFiles/zhouslam.dir/frame.cpp.o: ../src/frame.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/zhouslam.dir/frame.cpp.o"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/frame.cpp.o -c /home/vortex/zhou_temp_test/VO_project_v3/src/frame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/zhouslam.dir/frame.cpp.o"
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/frame.cpp.o -c /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/frame.cpp
 
 src/CMakeFiles/zhouslam.dir/frame.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zhouslam.dir/frame.cpp.i"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_project_v3/src/frame.cpp > CMakeFiles/zhouslam.dir/frame.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/frame.cpp > CMakeFiles/zhouslam.dir/frame.cpp.i
 
 src/CMakeFiles/zhouslam.dir/frame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zhouslam.dir/frame.cpp.s"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_project_v3/src/frame.cpp -o CMakeFiles/zhouslam.dir/frame.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/frame.cpp -o CMakeFiles/zhouslam.dir/frame.cpp.s
 
 src/CMakeFiles/zhouslam.dir/frame.cpp.o.requires:
 
@@ -131,16 +131,16 @@ src/CMakeFiles/zhouslam.dir/frame.cpp.o.provides.build: src/CMakeFiles/zhouslam.
 
 src/CMakeFiles/zhouslam.dir/map.cpp.o: src/CMakeFiles/zhouslam.dir/flags.make
 src/CMakeFiles/zhouslam.dir/map.cpp.o: ../src/map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/zhouslam.dir/map.cpp.o"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/map.cpp.o -c /home/vortex/zhou_temp_test/VO_project_v3/src/map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/zhouslam.dir/map.cpp.o"
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/map.cpp.o -c /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/map.cpp
 
 src/CMakeFiles/zhouslam.dir/map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zhouslam.dir/map.cpp.i"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_project_v3/src/map.cpp > CMakeFiles/zhouslam.dir/map.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/map.cpp > CMakeFiles/zhouslam.dir/map.cpp.i
 
 src/CMakeFiles/zhouslam.dir/map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zhouslam.dir/map.cpp.s"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_project_v3/src/map.cpp -o CMakeFiles/zhouslam.dir/map.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/map.cpp -o CMakeFiles/zhouslam.dir/map.cpp.s
 
 src/CMakeFiles/zhouslam.dir/map.cpp.o.requires:
 
@@ -155,16 +155,16 @@ src/CMakeFiles/zhouslam.dir/map.cpp.o.provides.build: src/CMakeFiles/zhouslam.di
 
 src/CMakeFiles/zhouslam.dir/mappoint.cpp.o: src/CMakeFiles/zhouslam.dir/flags.make
 src/CMakeFiles/zhouslam.dir/mappoint.cpp.o: ../src/mappoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/zhouslam.dir/mappoint.cpp.o"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/mappoint.cpp.o -c /home/vortex/zhou_temp_test/VO_project_v3/src/mappoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/zhouslam.dir/mappoint.cpp.o"
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/mappoint.cpp.o -c /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/mappoint.cpp
 
 src/CMakeFiles/zhouslam.dir/mappoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zhouslam.dir/mappoint.cpp.i"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_project_v3/src/mappoint.cpp > CMakeFiles/zhouslam.dir/mappoint.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/mappoint.cpp > CMakeFiles/zhouslam.dir/mappoint.cpp.i
 
 src/CMakeFiles/zhouslam.dir/mappoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zhouslam.dir/mappoint.cpp.s"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_project_v3/src/mappoint.cpp -o CMakeFiles/zhouslam.dir/mappoint.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/mappoint.cpp -o CMakeFiles/zhouslam.dir/mappoint.cpp.s
 
 src/CMakeFiles/zhouslam.dir/mappoint.cpp.o.requires:
 
@@ -179,16 +179,16 @@ src/CMakeFiles/zhouslam.dir/mappoint.cpp.o.provides.build: src/CMakeFiles/zhousl
 
 src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.o: src/CMakeFiles/zhouslam.dir/flags.make
 src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.o: ../src/visual_odometry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.o"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/visual_odometry.cpp.o -c /home/vortex/zhou_temp_test/VO_project_v3/src/visual_odometry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.o"
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/visual_odometry.cpp.o -c /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/visual_odometry.cpp
 
 src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zhouslam.dir/visual_odometry.cpp.i"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_project_v3/src/visual_odometry.cpp > CMakeFiles/zhouslam.dir/visual_odometry.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/visual_odometry.cpp > CMakeFiles/zhouslam.dir/visual_odometry.cpp.i
 
 src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zhouslam.dir/visual_odometry.cpp.s"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_project_v3/src/visual_odometry.cpp -o CMakeFiles/zhouslam.dir/visual_odometry.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/visual_odometry.cpp -o CMakeFiles/zhouslam.dir/visual_odometry.cpp.s
 
 src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.o.requires:
 
@@ -203,16 +203,16 @@ src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.o.provides.build: src/CMakeFiles
 
 src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o: src/CMakeFiles/zhouslam.dir/flags.make
 src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o: ../src/Ceres_BA_PnP.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o -c /home/vortex/zhou_temp_test/VO_project_v3/src/Ceres_BA_PnP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o"
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o -c /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/Ceres_BA_PnP.cpp
 
 src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.i"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_project_v3/src/Ceres_BA_PnP.cpp > CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/Ceres_BA_PnP.cpp > CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.i
 
 src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.s"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_project_v3/src/Ceres_BA_PnP.cpp -o CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/Ceres_BA_PnP.cpp -o CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.s
 
 src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o.requires:
 
@@ -225,6 +225,54 @@ src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o.provides: src/CMakeFiles/zhouslam
 src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o.provides.build: src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o
 
 
+src/CMakeFiles/zhouslam.dir/g2o_types.cpp.o: src/CMakeFiles/zhouslam.dir/flags.make
+src/CMakeFiles/zhouslam.dir/g2o_types.cpp.o: ../src/g2o_types.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/zhouslam.dir/g2o_types.cpp.o"
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/g2o_types.cpp.o -c /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/g2o_types.cpp
+
+src/CMakeFiles/zhouslam.dir/g2o_types.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zhouslam.dir/g2o_types.cpp.i"
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/g2o_types.cpp > CMakeFiles/zhouslam.dir/g2o_types.cpp.i
+
+src/CMakeFiles/zhouslam.dir/g2o_types.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zhouslam.dir/g2o_types.cpp.s"
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/g2o_types.cpp -o CMakeFiles/zhouslam.dir/g2o_types.cpp.s
+
+src/CMakeFiles/zhouslam.dir/g2o_types.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/zhouslam.dir/g2o_types.cpp.o.requires
+
+src/CMakeFiles/zhouslam.dir/g2o_types.cpp.o.provides: src/CMakeFiles/zhouslam.dir/g2o_types.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/g2o_types.cpp.o.provides.build
+.PHONY : src/CMakeFiles/zhouslam.dir/g2o_types.cpp.o.provides
+
+src/CMakeFiles/zhouslam.dir/g2o_types.cpp.o.provides.build: src/CMakeFiles/zhouslam.dir/g2o_types.cpp.o
+
+
+src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o: src/CMakeFiles/zhouslam.dir/flags.make
+src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o: ../src/g2o_BA_PnP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o"
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o -c /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/g2o_BA_PnP.cpp
+
+src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.i"
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/g2o_BA_PnP.cpp > CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.i
+
+src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.s"
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src/g2o_BA_PnP.cpp -o CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.s
+
+src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o.requires
+
+src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o.provides: src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/zhouslam.dir/build.make src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o.provides.build
+.PHONY : src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o.provides
+
+src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o.provides.build: src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o
+
+
 # Object files for target zhouslam
 zhouslam_OBJECTS = \
 "CMakeFiles/zhouslam.dir/camera.cpp.o" \
@@ -233,7 +281,9 @@ zhouslam_OBJECTS = \
 "CMakeFiles/zhouslam.dir/map.cpp.o" \
 "CMakeFiles/zhouslam.dir/mappoint.cpp.o" \
 "CMakeFiles/zhouslam.dir/visual_odometry.cpp.o" \
-"CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o"
+"CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o" \
+"CMakeFiles/zhouslam.dir/g2o_types.cpp.o" \
+"CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o"
 
 # External object files for target zhouslam
 zhouslam_EXTERNAL_OBJECTS =
@@ -245,6 +295,8 @@ zhouslam_EXTERNAL_OBJECTS =
 ../lib/libzhouslam.so: src/CMakeFiles/zhouslam.dir/mappoint.cpp.o
 ../lib/libzhouslam.so: src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.o
 ../lib/libzhouslam.so: src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o
+../lib/libzhouslam.so: src/CMakeFiles/zhouslam.dir/g2o_types.cpp.o
+../lib/libzhouslam.so: src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o
 ../lib/libzhouslam.so: src/CMakeFiles/zhouslam.dir/build.make
 ../lib/libzhouslam.so: /opt/ros/kinetic/lib/libopencv_stitching3.so.3.2.0
 ../lib/libzhouslam.so: /opt/ros/kinetic/lib/libopencv_superres3.so.3.2.0
@@ -321,8 +373,8 @@ zhouslam_EXTERNAL_OBJECTS =
 ../lib/libzhouslam.so: /usr/lib/x86_64-linux-gnu/librt.so
 ../lib/libzhouslam.so: /usr/lib/x86_64-linux-gnu/libcxsparse.so
 ../lib/libzhouslam.so: src/CMakeFiles/zhouslam.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library ../../lib/libzhouslam.so"
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zhouslam.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library ../../lib/libzhouslam.so"
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zhouslam.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/zhouslam.dir/build: ../lib/libzhouslam.so
@@ -336,14 +388,16 @@ src/CMakeFiles/zhouslam.dir/requires: src/CMakeFiles/zhouslam.dir/map.cpp.o.requ
 src/CMakeFiles/zhouslam.dir/requires: src/CMakeFiles/zhouslam.dir/mappoint.cpp.o.requires
 src/CMakeFiles/zhouslam.dir/requires: src/CMakeFiles/zhouslam.dir/visual_odometry.cpp.o.requires
 src/CMakeFiles/zhouslam.dir/requires: src/CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o.requires
+src/CMakeFiles/zhouslam.dir/requires: src/CMakeFiles/zhouslam.dir/g2o_types.cpp.o.requires
+src/CMakeFiles/zhouslam.dir/requires: src/CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o.requires
 
 .PHONY : src/CMakeFiles/zhouslam.dir/requires
 
 src/CMakeFiles/zhouslam.dir/clean:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build/src && $(CMAKE_COMMAND) -P CMakeFiles/zhouslam.dir/cmake_clean.cmake
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src && $(CMAKE_COMMAND) -P CMakeFiles/zhouslam.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/zhouslam.dir/clean
 
 src/CMakeFiles/zhouslam.dir/depend:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vortex/zhou_temp_test/VO_project_v3 /home/vortex/zhou_temp_test/VO_project_v3/src /home/vortex/zhou_temp_test/VO_project_v3/build /home/vortex/zhou_temp_test/VO_project_v3/build/src /home/vortex/zhou_temp_test/VO_project_v3/build/src/CMakeFiles/zhouslam.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3 /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/src /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src/CMakeFiles/zhouslam.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/zhouslam.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/vortex/zhou_temp_test/VO_project_v3/test
+# Install script for directory: /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

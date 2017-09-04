@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vortex/zhou_temp_test/VO_project_v3
+CMAKE_SOURCE_DIR = /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vortex/zhou_temp_test/VO_project_v3/build
+CMAKE_BINARY_DIR = /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -78,16 +67,27 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles /home/vortex/zhou_temp_test/VO_project_v3/build/test/CMakeFiles/progress.marks
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles 0
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/test/CMakeFiles/progress.marks
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 test/clean
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,33 +97,33 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/run_vo.dir/rule:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/run_vo.dir/rule
-.PHONY : test/CMakeFiles/run_vo.dir/rule
+test/CMakeFiles/run_vo_ceres.dir/rule:
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/run_vo_ceres.dir/rule
+.PHONY : test/CMakeFiles/run_vo_ceres.dir/rule
 
 # Convenience name for target.
-run_vo: test/CMakeFiles/run_vo.dir/rule
+run_vo_ceres: test/CMakeFiles/run_vo_ceres.dir/rule
 
-.PHONY : run_vo
+.PHONY : run_vo_ceres
 
 # fast build rule for target.
-run_vo/fast:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f test/CMakeFiles/run_vo.dir/build.make test/CMakeFiles/run_vo.dir/build
-.PHONY : run_vo/fast
+run_vo_ceres/fast:
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f test/CMakeFiles/run_vo_ceres.dir/build.make test/CMakeFiles/run_vo_ceres.dir/build
+.PHONY : run_vo_ceres/fast
 
 run_vo.o: run_vo.cpp.o
 
@@ -131,7 +131,7 @@ run_vo.o: run_vo.cpp.o
 
 # target to build an object file
 run_vo.cpp.o:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f test/CMakeFiles/run_vo.dir/build.make test/CMakeFiles/run_vo.dir/run_vo.cpp.o
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f test/CMakeFiles/run_vo_ceres.dir/build.make test/CMakeFiles/run_vo_ceres.dir/run_vo.cpp.o
 .PHONY : run_vo.cpp.o
 
 run_vo.i: run_vo.cpp.i
@@ -140,7 +140,7 @@ run_vo.i: run_vo.cpp.i
 
 # target to preprocess a source file
 run_vo.cpp.i:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f test/CMakeFiles/run_vo.dir/build.make test/CMakeFiles/run_vo.dir/run_vo.cpp.i
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f test/CMakeFiles/run_vo_ceres.dir/build.make test/CMakeFiles/run_vo_ceres.dir/run_vo.cpp.i
 .PHONY : run_vo.cpp.i
 
 run_vo.s: run_vo.cpp.s
@@ -149,7 +149,7 @@ run_vo.s: run_vo.cpp.s
 
 # target to generate assembly for a file
 run_vo.cpp.s:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(MAKE) -f test/CMakeFiles/run_vo.dir/build.make test/CMakeFiles/run_vo.dir/run_vo.cpp.s
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(MAKE) -f test/CMakeFiles/run_vo_ceres.dir/build.make test/CMakeFiles/run_vo_ceres.dir/run_vo.cpp.s
 .PHONY : run_vo.cpp.s
 
 # Help Target
@@ -158,9 +158,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... run_vo"
+	@echo "... rebuild_cache"
+	@echo "... run_vo_ceres"
 	@echo "... run_vo.o"
 	@echo "... run_vo.i"
 	@echo "... run_vo.s"
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vortex/zhou_temp_test/VO_project_v3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

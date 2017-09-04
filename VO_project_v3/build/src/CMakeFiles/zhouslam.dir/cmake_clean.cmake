@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/zhouslam.dir/mappoint.cpp.o"
   "CMakeFiles/zhouslam.dir/visual_odometry.cpp.o"
   "CMakeFiles/zhouslam.dir/Ceres_BA_PnP.cpp.o"
+  "CMakeFiles/zhouslam.dir/g2o_types.cpp.o"
+  "CMakeFiles/zhouslam.dir/g2o_BA_PnP.cpp.o"
   "../../lib/libzhouslam.pdb"
   "../../lib/libzhouslam.so"
 )

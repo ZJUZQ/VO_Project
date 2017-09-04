@@ -1,5 +1,7 @@
 #include "zhou_vo/Ceres_BA_PnP.hpp"
 
+namespace zhou_vo{
+
 struct ReprojectionError {
 	ReprojectionError(cv::Point3d p3d_, cv::Point2d p2d_, cv::Mat K_) 
 		: _p3d(p3d_), _p2d(p2d_), _K(K_) {}
@@ -37,16 +39,19 @@ struct ReprojectionError {
 	cv::Mat _K; // camera matrix
 };
 
-void bundle_adjustment_ceres(const std::vector<cv::Point3d> pts_3d,
-							 const std::vector<cv::Point2d> pts_2d,
-							 const cv::Mat& K,
-							 Sophus::SE3& T_cr){ // pose: angleaxis, translate
+void _3d2d_BA_ceres(	const std::vector<cv::Point3d> pts_3d,
+						const std::vector<cv::Point2d> pts_2d,
+						const cv::Mat& K,
+						cv::Mat& inliers_,
+						std::vector<MapPoint::Ptr>& match_3dpts,
+						Sophus::SE3& T_cw){ // pose: angleaxis, translate
 	
 	//	Each residual in a BAL problem depends on a six parameter: pose.
 	//  pose.head<3>: rotation;  pose.tail<3>: translation
 
 	typedef Eigen::Matrix<double, 6, 1> Vector6d;
-	Vector6d se3 = T_cr.log(); // se3.head<3> = translation;	se3.tail<3> = rotation
+	Vector6d se3 = T_cw.log(); // se3.head<3> = translation;	se3.tail<3> = rotation
+	
 	double camera_pose[6] = {se3(3, 0),
 							 se3(4, 0),
 							 se3(5, 0),
@@ -57,8 +62,11 @@ void bundle_adjustment_ceres(const std::vector<cv::Point3d> pts_3d,
 	//double pts_3d_array[3 * pts_3d.size()];
 
 	ceres::Problem problem;
-	for (size_t i = 0; i < pts_3d.size(); ++i) {
-		ceres::CostFunction* cost_function = ReprojectionError::Create(pts_3d[i], pts_2d[i], K);
+	for (int i = 0; i < inliers_.rows; i++) {
+		int index = inliers_.at<int>(i, 0);
+			// inliers:	Output vector that contains indices of inliers in pts_3d and pts_2d
+
+		ceres::CostFunction* cost_function = ReprojectionError::Create(pts_3d[index], pts_2d[index], K);
 
 		/*pts_3d_array[3 * i] = pts_3d[i].x;
 		pts_3d_array[3 * i + 1] = pts_3d[i].y;
@@ -68,6 +76,9 @@ void bundle_adjustment_ceres(const std::vector<cv::Point3d> pts_3d,
 		problem.AddResidualBlock(cost_function,
 		                       loss_function , //squared loss 
 		                       camera_pose);
+
+		// set the inlier map points
+		match_3dpts[index]->matched_times_++;
 	}
 
 	ceres::Solver::Options options;
@@ -90,5 +101,7 @@ void bundle_adjustment_ceres(const std::vector<cv::Point3d> pts_3d,
 		se3(i, 0) = camera_pose[i + 3];
 		se3(i + 3, 0) = camera_pose[i];
 	}
-	T_cr = Sophus::SE3::exp(se3);
+	T_cw = Sophus::SE3::exp(se3);
+}
+
 }

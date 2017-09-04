@@ -29,6 +29,7 @@ int main(int argc, char** argv){
 		cout << "please generate the associate file called associate.txt!" << endl;
 		return 1;
 	}
+
 	vector<string> rgb_files, depth_files;
 	vector<double> rgb_times, depth_times;
 	while(!fin.eof()){
@@ -60,6 +61,8 @@ int main(int argc, char** argv){
 	cv::namedWindow("image");
 
 	for(size_t i = 0; i < rgb_files.size(); i++){
+
+		cout << "*********** loop " << i << " *************" << endl;
 		clock_t t1 = clock();
 
 		cv::Mat color = cv::imread(rgb_files[i]);
@@ -104,6 +107,7 @@ int main(int argc, char** argv){
 		vis.spinOnce(1, false);
 		cout << endl;
 	}
+	
 	cv::destroyAllWindows();
 	return 0;
 }

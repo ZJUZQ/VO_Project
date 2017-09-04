@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vortex/zhou_temp_test/VO_project_v3
+CMAKE_SOURCE_DIR = /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vortex/zhou_temp_test/VO_project_v3/build
+CMAKE_BINARY_DIR = /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles /home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_project_v3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,17 +124,17 @@ zhouslam/fast:
 .PHONY : zhouslam/fast
 
 #=============================================================================
-# Target rules for targets named run_vo
+# Target rules for targets named run_vo_ceres
 
 # Build rule for target.
-run_vo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_vo
-.PHONY : run_vo
+run_vo_ceres: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_vo_ceres
+.PHONY : run_vo_ceres
 
 # fast build rule for target.
-run_vo/fast:
-	$(MAKE) -f test/CMakeFiles/run_vo.dir/build.make test/CMakeFiles/run_vo.dir/build
-.PHONY : run_vo/fast
+run_vo_ceres/fast:
+	$(MAKE) -f test/CMakeFiles/run_vo_ceres.dir/build.make test/CMakeFiles/run_vo_ceres.dir/build
+.PHONY : run_vo_ceres/fast
 
 # Help Target
 help:
@@ -145,7 +145,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... zhouslam"
-	@echo "... run_vo"
+	@echo "... run_vo_ceres"
 .PHONY : help
 
 

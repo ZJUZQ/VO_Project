@@ -8,6 +8,8 @@ set (CMAKE_BUILD_TYPE "Release")
 set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set (LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
+list( APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules )
+
 ####################### dependencies ##########################
 #Eigen
 include_directories ("/usr/include/eigen3")
@@ -24,10 +26,15 @@ include_directories (${Sophus_INCLUDE_DIRS})
 find_package(Ceres REQUIRED)
 include_directories(${CERES_INCLUDE_DIRS})
 
+# G2O
+find_package( G2O REQUIRED )
+include_directories( ${G2O_INCLUDE_DIRS} )
+
 set (THIRD_PARTY_LIBS
 	${OpenCV_LIBS}
 	${Sophus_LIBRARIES}
-	${CERES_LIBRARIES})
+	${CERES_LIBRARIES}
+	g2o_core g2o_stuff g2o_types_sba)
 
 ######################### source and test #######################
 include_directories(${PROJECT_SOURCE_DIR}/include)

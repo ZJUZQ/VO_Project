@@ -7,6 +7,7 @@
 #include "opencv2/features2d/features2d.hpp"
 
 #include "zhou_vo/Ceres_BA_PnP.hpp"
+#include "zhou_vo/g2o_BA_PnP.hpp"
 
 namespace zhou_vo{
 

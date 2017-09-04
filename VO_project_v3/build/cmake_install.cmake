@@ -1,4 +1,4 @@
-# Install script for directory: /home/vortex/zhou_temp_test/VO_project_v3
+# Install script for directory: /home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/vortex/zhou_temp_test/VO_project_v3/build/src/cmake_install.cmake")
-  include("/home/vortex/zhou_temp_test/VO_project_v3/build/test/cmake_install.cmake")
+  include("/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/src/cmake_install.cmake")
+  include("/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/test/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vortex/zhou_temp_test/VO_project_v3/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/vortex/zhou_temp_test/VO_Project_github/VO_project_v3/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

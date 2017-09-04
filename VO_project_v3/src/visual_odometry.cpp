@@ -130,20 +130,30 @@ namespace zhou_vo{
 					0, ref_->camera_->fy_, ref_->camera_->cy_,
 					0, 0, 1.0);
 		cv::Mat rvec, tvec, inliers;
+
 		cv::solvePnPRansac(pts3d, pts2d, K, cv::Mat(), rvec, tvec, false, 100, 4.0, 0.99, inliers);
+		// inliers:	Output vector that contains indices of inliers in objectPoints and imagePoints . 
+
 		num_inliers_ = inliers.rows;
 		std::cout << "PnP inliers: " << num_inliers_ << std::endl;
 		T_cw_estimated_ = Sophus::SE3(
 			Sophus::SO3(rvec.at<double>(0, 0), rvec.at<double>(1, 0), rvec.at<double>(2, 0)),
 			Eigen::Vector3d(tvec.at<double>(0, 0), tvec.at<double>(1, 0), tvec.at<double>(2, 0)));
+		std::cout << "result by PnPRansac: \n"<< "T_cw_estimated_: \n" << T_cw_estimated_.matrix() << std::endl;
 
-		std::cout << "T_cw_estimated_: \n" << T_cw_estimated_.matrix() << std::endl;
+		/**
+		// using bundle adjustment to optimize the camera pose with g2o
+		_3d2d_BA_g2o(pts3d, pts2d, curr_, inliers, match_3dpts_, T_cw_estimated_);
+		*/
 
+		
 		// using bundle adjustment to optimize the camera pose with ceres
-		bundle_adjustment_ceres(pts3d, pts2d, K, T_cw_estimated_);
+		_3d2d_BA_ceres(pts3d, pts2d, K, inliers, match_3dpts_, T_cw_estimated_);
+		
 
-		std::cout << "T_cw_estimated_: \n" << T_cw_estimated_.matrix() << std::endl;
+		std::cout << "after bundle adjustment: \n" <<"T_cw_estimated_: \n" << T_cw_estimated_.matrix() << std::endl;
 	}
+
 
 	/*void VisualOdometry::setRef3DPoints(){
 		// select the features with depth measurements
